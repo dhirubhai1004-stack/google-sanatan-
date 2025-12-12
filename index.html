@@ -7,76 +7,28 @@
   <meta name="description" content="Sanatan Dham Kendra - Book online Poojas, Gau Seva, and make donations securely. Experience the divine connection from anywhere." />
   <title>Sanatan Dham Kendra | Online Pooja, Live Darshan & Prasad</title>
   
-  <!-- Favicon using a generic Om/Temple emoji as a data URI for instant loading -->
+  <!-- Favicon -->
   <link rel="icon" href="https://fav.farm/🕉️" />
 
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Hindi:ital@0;1&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            saffron: {
-              '100': '#FFF1E0',
-              '300': '#FFD3A3',
-              '500': '#FF9933',
-              '700': '#E67E22',
-              '900': '#D35400',
-            },
-            golden: {
-              'DEFAULT': '#D4AF37',
-              'light': '#F0E68C',
-              'dark': '#B8860B',
-            },
-            ivory: '#FFFDF7',
-          },
-          fontFamily: {
-            'devanagari': ['"Tiro Devanagari Hindi"', 'serif'],
-            'sans': ['Poppins', 'sans-serif'],
-          },
-        },
-      },
-    }
-  </script>
-  <style>
-    body {
-        background-color: #FFFDF7; /* ivory */
-    }
-    .temple-header-border {
-      position: relative;
-      border-bottom: 2px solid #D4AF37; /* golden */
-    }
-    .temple-header-border::after {
-      content: '';
-      position: absolute;
-      bottom: -10px;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 20px;
-      height: 20px;
-      background: #FFFDF7;
-      border: 2px solid #D4AF37;
-      border-top: none;
-      border-left: none;
-      transform: translateX(-50%) rotate(45deg);
-    }
-  </style>
+  
+  <!-- Razorpay SDK -->
+  <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
 <script type="importmap">
 {
   "imports": {
-    "react/": "https://aistudiocdn.com/react@^19.2.0/",
-    "react": "https://aistudiocdn.com/react@^19.2.0",
-    "react-dom/client": "https://aistudiocdn.com/react-dom@^19.2.0/client",
-    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/"
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/"
   }
 }
 </script>
 </head>
 <body class="bg-ivory text-gray-800 font-sans antialiased">
   <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
 </body>
 </html>
